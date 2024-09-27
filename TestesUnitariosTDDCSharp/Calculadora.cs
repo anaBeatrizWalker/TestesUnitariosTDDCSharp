@@ -6,17 +6,19 @@ namespace TestesUnitariosTDDCSharp
 {
     public class Calculadora
     {
-        private List<string> listaHistorico; 
+        private List<string> listaHistorico;
+        private string data;
 
-        public Calculadora()
+        public Calculadora(string data)
         {
+            this.data = data;
             listaHistorico = new List<string>();
         }
 
         public int somar(int a, int b)
         {
             int resultado = a + b;
-            listaHistorico.Insert(0, $"{a} + {b} = {resultado}");
+            listaHistorico.Insert(0, $"{a} + {b} = {resultado} | ${data}");
             return resultado;
         }
 
@@ -43,7 +45,8 @@ namespace TestesUnitariosTDDCSharp
 
         public List<string> historico()
         {
-            List<string> resultado = new List<string>(listaHistorico);
+            List<string> resultado =  new List<string>(listaHistorico);
+
             return resultado;
         }
     }

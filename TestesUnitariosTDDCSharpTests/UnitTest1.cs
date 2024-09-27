@@ -6,10 +6,17 @@ namespace TestesUnitariosTDDCSharpTests
 {
     public class UnitTest1
     {
+        public Calculadora construirClasse()
+        {
+            string data = "27/09/2024";
+            Calculadora calculadora = new Calculadora(data);
+            return calculadora;
+        }
+
         [Fact]
         public void TesteSomarUmConjunto()
         {
-            Calculadora calculadora = new Calculadora();
+            Calculadora calculadora = construirClasse();
 
             int resultado = calculadora.somar(1, 2);
 
@@ -21,7 +28,7 @@ namespace TestesUnitariosTDDCSharpTests
         [InlineData(2, 3, 5)]
         public void TesteSomarVariosConjuntos(int a, int b, int resultado)
         {
-            Calculadora calculadora = new Calculadora();
+            Calculadora calculadora = construirClasse();
 
             int resultadoDaCalculadora = calculadora.somar(a, b);
 
@@ -33,7 +40,7 @@ namespace TestesUnitariosTDDCSharpTests
         [InlineData(6, 5, 1)]
         public void TesteSubtrair(int a, int b, int resultado)
         {
-            Calculadora calculadora = new Calculadora();
+            Calculadora calculadora = construirClasse();
 
             int resultadoDaCalculadora = calculadora.subtrair(a, b);
 
@@ -45,7 +52,7 @@ namespace TestesUnitariosTDDCSharpTests
         [InlineData(4, 5, 20)]
         public void TesteMultiplicar(int a, int b, int resultado)
         {
-            Calculadora calculadora = new Calculadora();
+            Calculadora calculadora = construirClasse();
 
             int resultadoDaCalculadora = calculadora.multiplicar(a, b);
 
@@ -57,7 +64,7 @@ namespace TestesUnitariosTDDCSharpTests
         [InlineData(5, 5, 1)]
         public void TesteDividir(int a, int b, int resultado)
         {
-            Calculadora calculadora = new Calculadora();
+            Calculadora calculadora = construirClasse();
 
             int resultadoDaCalculadora = calculadora.dividir(a, b);
 
@@ -67,7 +74,7 @@ namespace TestesUnitariosTDDCSharpTests
         [Fact]
         public void TesteDivisaoPorZeroLançarExcecao()
         {
-            Calculadora calculadora = new Calculadora();
+            Calculadora calculadora = construirClasse();
 
             Assert.Throws<DivideByZeroException>(
                    () => calculadora.dividir(3, 0)
@@ -77,7 +84,7 @@ namespace TestesUnitariosTDDCSharpTests
         [Fact]
         public void TesteHistoricoNaoVazio()
         {
-            Calculadora calculadora = new Calculadora();
+            Calculadora calculadora = construirClasse();
 
             calculadora.somar(1, 2);
             calculadora.subtrair(2, 1);
