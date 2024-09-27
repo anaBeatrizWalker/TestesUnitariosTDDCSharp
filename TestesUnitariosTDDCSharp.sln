@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestesUnitariosTDDCSharp", "TestesUnitariosTDDCSharp\TestesUnitariosTDDCSharp.csproj", "{ECF4742F-4F59-4565-8192-A3177E750518}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestesUnitariosTDDCSharpTests", "TestesUnitariosTDDCSharpTests\TestesUnitariosTDDCSharpTests.csproj", "{26037592-A8F3-4F31-8C48-8D76B2C2D8A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECF4742F-4F59-4565-8192-A3177E750518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF4742F-4F59-4565-8192-A3177E750518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF4742F-4F59-4565-8192-A3177E750518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF4742F-4F59-4565-8192-A3177E750518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26037592-A8F3-4F31-8C48-8D76B2C2D8A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26037592-A8F3-4F31-8C48-8D76B2C2D8A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26037592-A8F3-4F31-8C48-8D76B2C2D8A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26037592-A8F3-4F31-8C48-8D76B2C2D8A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FE5C653-39D8-4F52-993E-5F8D0DEBEAF5}
+	EndGlobalSection
+EndGlobal
