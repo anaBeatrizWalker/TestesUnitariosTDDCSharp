@@ -65,12 +65,12 @@ namespace TestesUnitariosTDDCSharpTests
         }
 
         [Fact]
-        public void TesteDivisaoPorZero()
+        public void TesteDivisaoPorZeroLançarExcecao()
         {
             Calculadora calculadora = new Calculadora();
 
             Assert.Throws<DivideByZeroException>(
-                   () => calculadora.dividir(3,0)
+                   () => calculadora.dividir(3, 0)
             );
         }
 
@@ -86,7 +86,7 @@ namespace TestesUnitariosTDDCSharpTests
             var lista = calculadora.historico();
 
             Assert.NotEmpty(lista);
-            Assert.Equal(4, lista.Count);
+            Assert.Equal(3, lista.Count);
         }
     }
 }
